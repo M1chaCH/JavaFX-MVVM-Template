@@ -4,6 +4,9 @@ import ch.micha.javafx.mvvm.api.IEntity;
 
 import java.util.UUID;
 
+/**
+ * a basic example implementation of {@link IEntity}
+ */
 public class Entity implements IEntity {
     private final UUID uuid = UUID.randomUUID();
 

@@ -4,10 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * a basic CRUD implementation of the {@link AbstractModel}. It stores the data in a List<>
+ * @param <T> the type of the entity that is stored in this model.
+ */
 public class LocalModel<T extends IEntity> extends AbstractModel<T> {
 
+    /** the stored data */
     private final List<T> items = new ArrayList<>();
 
+    /**
+     * executed every time something changes in the list. Fires a property change event with the name
+     * AbstractModel.PROPERTY_ITEMS_CHANGED.
+     */
     private void itemsChanged(){
         changeSupport.firePropertyChange(PROPERTY_ITEMS_CHANGED, null, items);
     }
