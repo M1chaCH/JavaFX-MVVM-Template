@@ -1,0 +1,88 @@
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -background: #F5F1D5;
+    -logo: #4A849F;
+    -text-color: #182E38;
+    -error: #FF4D61;
+    -button: #B4D6C6;
+    -hover: #70AF91;
+
+    -fx-background-color: -hover;
+}
+.table-view .column-header .label{
+    -fx-text-fill: -text-color;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-border-color: -button;
+    -fx-border-width: 1;
+}
+
+.table-view .cell{
+    -fx-cell-size: 35;
+    -fx-alignment: center-left;
+    -fx-background-color: -button;
+    -fx-border-color: -button;
+    -fx-text-fill: -text-color;
+
+}
+
+.table-view .cell:selected{
+    -fx-cell-size: 35;
+    -fx-alignment: center-left;
+    -fx-background-color: -button;
+    -fx-border-color: -hover;
+    -fx-text-fill: -text-color;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -hover;
+    -fx-text-background-color: -hover;
+}
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 2em;
+
+}
+
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: -hover;
+
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: -hover;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}
+
+.table-view .scroll-bar:vertical .increment-button,
+.table-view .scroll-bar:vertical .decrement-button,
+.table-view .scroll-bar:horizontal .increment-button,
+.table-view .scroll-bar:horizontal .decrement-button{
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar,
+.table-view .scroll-bar{
+    -fx-background-color: -button;
+}
+
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+}
+.chart-plot-background {
+    -fx-background-color:transparent;
+}
+
+.chart-pie {
+    -fx-border-color: derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+}

@@ -1,0 +1,70 @@
+.root{
+    -background: #F5F1D5;
+    -logo: #4A849F;
+    -text-color: #182E38;
+    -error: #FF4D61;
+    -button: #B4D6C6;
+    -hover: #8DC0A8;
+    -darker: #70AF91;
+}
+
+.mainPane{
+    -fx-background-color: -background;
+}
+
+.title{
+    -fx-text-fill: -text-color;
+    -fx-font-weight: bold;
+    -fx-font-family: "System";
+    -fx-font-size: 20pt;
+}
+
+.subtitle{
+    -fx-text-fill: -text-color;
+    -fx-font-weight: bold;
+    -fx-font-family: "System";
+    -fx-font-size: 14pt;
+}
+
+.defaultText {
+    -fx-text-fill: -text-color;
+    -fx-font-weight: normal;
+    -fx-font-family: "System";
+    -fx-font-size: 10pt;
+}
+
+.button{
+    -fx-background-color: -button;
+    -fx-text-fill: -text-color;
+    -fx-font-weight: normal;
+    -fx-font-family: "System";
+    -fx-font-size: 10pt;
+}
+
+.button:pressed{
+    -fx-background-color: -darker;
+}
+
+.button:hover{
+    -fx-background-color: -hover;
+}
+
+.toggle-button{
+    -fx-background-color: -button;
+    -fx-text-fill: -text-color;
+    -fx-font-weight: normal;
+    -fx-font-family: "System";
+    -fx-font-size: 10pt;
+}
+
+.toggle-button:selected{
+    -fx-background-color: -hover;
+}
+
+.text-field{
+    -fx-background-color: -button;
+    -fx-text-fill: -text-color;
+    -fx-font-weight: normal;
+    -fx-font-family: "System";
+    -fx-font-size: 10pt;
+}

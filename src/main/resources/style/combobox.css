@@ -1,0 +1,27 @@
+.root{
+    -background: #F5F1D5;
+    -logo: #4A849F;
+    -text-color: #182E38;
+    -error: #FF4D61;
+    -button: #B4D6C6;
+    -hover: #8DC0A8;
+    -darker: #70AF91;
+}
+
+.combo-box{
+    -fx-background-color: -button;
+}
+
+.combo-box .list-cell{
+    -fx-background-color:-background;
+}
+
+/*Edit Cell Color Only when cursor hover cell */
+.combo-box .list-cell:hover{
+    -fx-background-color:-hover;
+}
+
+/*Edit Cell Color Only when selected */
+.combo-box .list-cell:selected{
+    -fx-background-color:-darker;
+}
